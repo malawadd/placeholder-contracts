@@ -9,7 +9,7 @@ import "./interfaces/IManaclesFactory.sol";
 import "./interfaces/IManaclesCallee.sol";
 
 contract ManaclesPair is ERC20Permit("Manacles") {
-    constructor() ERC20("Manacles", "FOO") {
+    constructor() ERC20("Manacles", "NOTH") {
         factory = msg.sender;
     }
 
