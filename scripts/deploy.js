@@ -11,11 +11,13 @@ async function main() {
 console.log("Deploying contracts with the account:");
   // USDC mock tokens (local only)
 
+  //addrs :0xB11011307e0F3c805387c10aa69F874244b1bec3
   const MockToken = await hre.ethers.getContractFactory("MockToken");
   const usdc = await MockToken.deploy("USDC", "USDC", 6 );
   await usdc.deployed();
   console.log("usdc:", usdc.address);
 }
+
 
 // We recommend this pattern to be able to use async/await everywhere
 // and properly handle errors.
