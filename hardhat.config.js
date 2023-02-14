@@ -9,7 +9,12 @@ module.exports = {
       chainId: 5001,
       url: "https://rpc.testnet.mantle.xyz",
       accounts: [process.env.PRIVATE_KEY],
-  }
+  },
+  mumbai: {
+    url: process.env.MUMBAI,
+    accounts: [process.env.PRIVATE_KEY],
+
+  },
   },
   solidity: {
     compilers: [{
